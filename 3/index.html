@@ -8,11 +8,85 @@
 	
 	<meta name="description" content="Serwis o starych grach pochodzących z Nintendo Entertainment System" />
 	<meta name="keywords" content="gry, komputerowe, retro, nes, konsole, retrogranie, stare gry" />
+
+	<link rel="stylesheet" href="style.css" type="text/css" />
+	<link href="https://fonts.googleapis.com/css?family=Lato:400,700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/fontello.css" type="text/css" />
+
+
 	
 </head>
 
 <body>
+	<div class="wrapper">
+		<div class="header">
+			<div class="logo">
+				<img src="pad.png" style="float: left;"/>
+				<span style="color: #c34f4f;">retro</span>granie.com
+				<div style="clear: both;"></div>
+			</div>
+		</div>
+		<div class="nav"></div>
 	
+
+		<div class="content">
+<p> ipsum dolor sit amet, consectetur adipiscing elit. Integer elementum viverra nisl, egestas feugiat nulla aliquam non. Vestibulum accumsan ligula lacus, et porttitor lorem facilisis varius. Integer aliquam urna sed iaculis tempus. Nullam sit amet feugiat lorem, eget aliquet tortor. Donec in massa dictum, feugiat nulla ac, condimentum mi. Integer laoreet ornare nibh, ut egestas nulla rhoncus non. Duis ut dolor est. Integer auctor bibendum nibh quis maximus. Pellentesque sit amet orci non leo blandit suscipit. Proin eleifend eget magna quis tincidunt. Morbi rutrum erat quam, in pretium est pharetra quis.</p>
+
+	<p>Nunc non lectus vel nibh tincidunt ultrices rhoncus ac mauris. In hac habitasse platea dictumst. Fusce molestie feugiat dolor at viverra. Ut tempor arcu faucibus leo rhoncus, facilisis vehicula urna venenatis. Etiam libero tellus, pellentesque sed tincidunt vel, ullamcorper a ipsum. Vivamus odio turpis, auctor quis nulla sit amet, pharetra gravida magna. Nullam bibendum est vitae aliquam vulputate. Mauris vulputate, massa et interdum pulvinar, quam felis euismod justo, ac venenatis odio sapien ut ante. Donec non risus viverra, tincidunt nulla sed, aliquam elit. Ut scelerisque sed velit at sodales. Nunc tristique urna ac enim lobortis, ut dictum nulla gravida. Cras ut metus maximus, posuere sapien vitae, pellentesque augue.</p>
+
+		<p>Donec vestibulum vel justo id pellentesque. In hac habitasse platea dictumst. Maecenas eget faucibus tellus, sit amet mattis enim. Curabitur eleifend vitae ligula et aliquam. Vivamus commodo eu nunc ac consectetur. Etiam ultrices, tellus sed fermentum sollicitudin, mauris sapien ullamcorper velit, non convallis ex ante eget ligula. Integer a congue orci, ut pretium orci. Aenean a aliquet mi. Duis ultrices odio vel justo feugiat imperdiet. Aenean metus dui, pretium at odio sit amet, scelerisque feugiat tellus. Fusce vitae iaculis lacus. Morbi at ex et ex faucibus efficitur in vitae nunc. Integer quis finibus lectus. Proin quis sem lectus.</p>
+
+			<p>Vivamus posuere egestas libero eu euismod. Pellentesque nec sapien at massa ullamcorper pretium id in felis. Donec euismod leo eu eros varius egestas. Maecenas sit amet eros ut velit efficitur lacinia id vel massa. Nam in magna non ipsum sagittis ultricies non ut urna. Vivamus nisi lectus, mattis a nulla nec, venenatis gravida ex. Duis gravida nisl at eros pellentesque, aliquam cursus mauris pulvinar. Integer condimentum elit et sollicitudin pulvinar. Nam semper elementum nisl, vel rutrum sapien elementum in. Vestibulum venenatis efficitur urna, lacinia porta libero consectetur quis. Maecenas malesuada eros nec commodo hendrerit. Nulla scelerisque leo eu gravida convallis. Morbi efficitur ipsum vitae facilisis efficitur.</p>
+
+				<p>Nunc facilisis, magna at blandit pretium, leo justo faucibus ex, vitae molestie nisl risus et sapien. Cras consequat sodales commodo. Donec pellentesque elit ac dolor iaculis gravida. Praesent eu massa ipsum. Nunc nec nibh a tellus gravida molestie. Pellentesque lacinia dui ut lectus vestibulum, a porta sem interdum. Mauris ac lacus orci. Maecenas quis odio nec justo laoreet finibus vitae ac justo. Maecenas quis pretium quam, quis faucibus augue. Pellentesque elit enim, consectetur sollicitudin consectetur vitae, laoreet dictum justo. Aliquam ex nisi, blandit ut nisi eu, convallis venenatis odio. Vestibulum gravida pellentesque consectetur.</p>
+		</div>
+
+		<div class="socials">
+			<div class="socialdivs">
+				<div class="fb">
+					<i class="icon-facebook"></i>
+				</div>
+				<div class="yt">
+					<i class="icon-youtube"></i>
+				</div>
+				<div class="tw">
+					<i class="icon-twitter"></i>
+				</div>
+				<div class="gplus">
+					<i class="icon-gplus"></i>
+				</div>
+				<div style="clear:both"></div>
+			</div>
+		</div>
+		<div class="footer">Retrogranie.com &copy; 2020 Thank you for your visit Mario! But our Princess is in another castle ;-)</div>
+	</div>
 	
+	<script src="jquery-3.4.1.min"></script>
+
+	<script>
+		
+		$(document).ready(function() {
+		var NavY = $('.nav').offset().top;
+
+		var stickyNav = function(){
+		var ScrollY = $(window).scrollTop();
+
+		if (ScrollY > NavY) {
+			$('.nav').addClass('stycky');
+		}else {
+			$('.nav').remobeClass('stycki');
+		}
+		};
+
+		stickyNav();
+
+		$(window).scroll(function() {
+			stickyNav();
+
+		});		
+		});
+	
+	</script>
+
 </body>
 </html>
