@@ -26,9 +26,46 @@
 				<div style="clear: both;"></div>
 			</div>
 		</div>
-		<div class="nav"></div>
+		<div class="nav">
+			<ol>
+				<li><a href="#">Strona Główna</a></li>
+				<li><a href="#">Klasyki NES</a>
+					<ul>
+						<li><a href="#">Contra</a></li>
+						<li><a href="#">Mario Bros</a></li>
+						<li><a href="#">Duck Tales</a></li>
+						<li><a href="#">Legend of Zelda</a></li>
+					</ul>
+				</li>
+				<li><a href="#">Gry filmowe</a>
+					<ul>
+						<li><a href="#">Home Alone</a></li>
+						<li><a href="#">Dick Trancy</a></li>
+						<li><a href="#">The Simpson</a></li>
+						<li><a href="#">Top Gun</a></li>
+					</ul>
+				</li>
+				<li><a href="#">Bijatyki</a>
+					<ul>
+						<li><a href="#">Mortal Kombat</a></li>
+						<li><a href="#">Nekketsu K.D.</a></li>
+						<li><a href="#">Double Dragon</a></li>
+						<li><a href="#">Turtles T.</a></li>
+					</ul>
+				</li>
+				<li><a href="#">Gry sportowe</a>
+					<ul>
+						<li><a href="#">Goal 3</a></li>
+						<li><a href="#">Excitebike</a></li>
+						<li><a href="#">Ike Ike Hockey</a></li>
+						<li><a href="#">Tenis</a></li>
+					</ul>
+				</li>
+				<li><a href="#">O autorach</a></li>
+			</ol>
+				
+		</div>
 	
-
 		<div class="content">
 <p> ipsum dolor sit amet, consectetur adipiscing elit. Integer elementum viverra nisl, egestas feugiat nulla aliquam non. Vestibulum accumsan ligula lacus, et porttitor lorem facilisis varius. Integer aliquam urna sed iaculis tempus. Nullam sit amet feugiat lorem, eget aliquet tortor. Donec in massa dictum, feugiat nulla ac, condimentum mi. Integer laoreet ornare nibh, ut egestas nulla rhoncus non. Duis ut dolor est. Integer auctor bibendum nibh quis maximus. Pellentesque sit amet orci non leo blandit suscipit. Proin eleifend eget magna quis tincidunt. Morbi rutrum erat quam, in pretium est pharetra quis.</p>
 
@@ -61,7 +98,7 @@
 		<div class="footer">Retrogranie.com &copy; 2020 Thank you for your visit Mario! But our Princess is in another castle ;-)</div>
 	</div>
 	
-	<script src="jquery-3.4.1.min"></script>
+	<script src="jquery-3.4.1.min.js"></script>
 
 	<script>
 		
@@ -72,9 +109,9 @@
 		var ScrollY = $(window).scrollTop();
 
 		if (ScrollY > NavY) {
-			$('.nav').addClass('stycky');
-		}else {
-			$('.nav').remobeClass('stycki');
+			$('.nav').addClass('sticky');
+		} else {
+			$('.nav').removeClass('sticky');
 		}
 		};
 
